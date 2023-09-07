@@ -1,0 +1,20 @@
+.card > div {
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.card.sideA .front {
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card.sideA .back {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card.sideB .front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card.sideB .back {
+    transform: perspective(500px) rotateY(360deg);
+}
